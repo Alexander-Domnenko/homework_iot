@@ -1,3 +1,4 @@
+// publisher
 const int trig_pin = 5;  // transmitter D1
 const int echo_pin = 4;  // receiver D2
 
