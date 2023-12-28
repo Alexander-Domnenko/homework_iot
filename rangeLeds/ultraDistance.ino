@@ -17,7 +17,7 @@ WiFiClient espClient;
 PubSubClient client(espClient);
 
 void setup() {
-  Serial.begin(9600);  // Move Serial.begin to the setup function
+  Serial.begin(9600); 
   pinMode(led_pin_1, OUTPUT);
   pinMode(led_pin_2, OUTPUT);
   pinMode(led_pin_3, OUTPUT);
