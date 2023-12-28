@@ -51,7 +51,7 @@ void loop() {
   delayMicroseconds(10);
   digitalWrite(trig_pin, LOW);
 
-  // Wait for the ultrasonic pulse to return
+
   unsigned long duration = pulseIn(echo_pin, HIGH);
   float distance_cm = duration * 0.0343 / 2.0;
 
@@ -64,7 +64,6 @@ void loop() {
     Serial.println("Failed to send message");
   }
 
-  // Allow the MQTT client to process incoming messages
   client.loop();
   
   delay(2000);
